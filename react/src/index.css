@@ -10,19 +10,14 @@ body {
 }
 
 
-/* AOS एनीमेशन वाले सभी मुख्य कंटेनरों पर यह लागू करें */
-/* यह उन तत्वों को कंटेन करेगा जो एनीमेशन के दौरान फैल सकते हैं */
 [data-aos] {
-    overflow: hidden; /* या overflow-x: hidden; */
-    /* width: 100%; यह भी मदद कर सकता है */
+    overflow: hidden; 
 }
 
 
 
 
-/* .aos-animate {
-    overflow-x: hidden;
-} */
+
 @keyframes gradient-x {
   0%, 100% {
     background-position: 0% 50%;
@@ -78,11 +73,10 @@ body {
 
 
 
-/* ✅ Stack Sans Notch font utility class */
 .font-stack-sans-notch {
   font-family: "Stack Sans Notch", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 700;  /* 600 for normal bold look */
+  font-weight: 700; 
   font-style: normal;
-  color: #000000; /* Pure black */
+  color: #000000;
 }
