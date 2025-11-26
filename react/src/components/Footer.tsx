@@ -453,7 +453,7 @@ const Footer: React.FC = () => {
                 <MapPin className="h-4 w-4 text-white mt-1 flex-shrink-0" /> {/* Icon color changed to white */}
                 <div>
                   <div className="text-gray-300 leading-snug">
-                    Codercom Building, Ajmer Road, Jaipur (302021)
+                    ATS building, 4/98, Ajmer Rd, Purani Chungi, Vidhyut Nagar, Jaipur
                   </div>
                   <div className="text-gray-400 text-xs">Rajasthan, India</div>
                 </div>
