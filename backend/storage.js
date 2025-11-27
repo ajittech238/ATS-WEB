@@ -1,12 +1,8 @@
-
-// backend/storage.js
 const multer = require("multer");
 const path = require("path");
 const fs = require("fs");
 
 const uploadDir = path.join(__dirname, "uploads");
-
-// ensure uploads folder exists
 if (!fs.existsSync(uploadDir)) {
   fs.mkdirSync(uploadDir, { recursive: true });
 }
@@ -19,7 +15,7 @@ const storage = multer.diskStorage({
     const uniqueSuffix = Date.now() + "-" + Math.round(Math.random() * 1e9);
     const safeName = file.originalname.replace(/\s+/g, "-");
     cb(null, uniqueSuffix + "-" + safeName);
-  }
+  },
 });
 
 const upload = multer({ storage });

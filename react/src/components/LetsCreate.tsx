@@ -1,7 +1,7 @@
 
 
 import React, { useState, FormEvent, ChangeEvent } from "react";
-import logo from "/atslogo7.jpg"; // <-- apna path lagao yahan
+import logo from "/atslogo7.jpg";
 
 type FrontendLang = "HTML" | "CSS" | "JavaScript" | "React" | "Vue";
 type BackendLang = "Node.js" | "PHP" | "Python";
@@ -66,7 +66,7 @@ const SelectField = ({
 const LetsCreate: React.FC = () => {
   const [form, setForm] = useState<FormData>(initialState);
   const [loading, setLoading] = useState(false);
-  const [showModal, setShowModal] = useState(false); // <-- MODAL STATE
+  const [showModal, setShowModal] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
   const handleChange = (
@@ -91,7 +91,7 @@ const LetsCreate: React.FC = () => {
       const data = await res.json();
       if (!res.ok) throw new Error(data.message);
 
-      setShowModal(true); // <-- SUCCESS PAR MODAL ON
+      setShowModal(true);
       setForm(initialState);
     } catch (err: any) {
       setError(err.message || "Unable to submit your idea.");
@@ -237,17 +237,14 @@ const LetsCreate: React.FC = () => {
         </form>
       </div>
 
-      {/* SUCCESS POPUP */}
       {showModal && (
         <div className="fixed inset-0 bg-black/50 flex justify-center items-center z-50">
           <div className="bg-white rounded-2xl shadow-xl w-[90%] max-w-lg p-6 flex gap-5">
 
-            {/* Left Side Logo */}
             <div className="flex items-center justify-center w-1/3">
               <img src={logo} className="w-24 h-24 object-contain" />
             </div>
 
-            {/* Right Side Message */}
             <div className="w-2/3">
               <h2 className="text-xl font-bold text-green-600">
                 Successful 🎉

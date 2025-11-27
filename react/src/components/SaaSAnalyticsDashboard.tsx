@@ -17,7 +17,7 @@ export default function SaaSAnalyticsDashboard() {
     <main className="bg-gradient-to-b from-blue-50 via-white to-blue-100 min-h-screen text-gray-900 py-32 px-4">
       <div className="max-w-7xl mx-auto">
 
-        {/* HERO */}
+
         <section className="grid gap-10 lg:grid-cols-2 items-center mb-20">
           <div>
             <p className="text-sm px-3 py-1 bg-blue-100 text-blue-700 rounded-full inline-block font-medium">
@@ -56,7 +56,7 @@ export default function SaaSAnalyticsDashboard() {
           />
         </section>
 
-        {/* Overview */}
+
         <section className="grid gap-8 lg:grid-cols-3 mb-20">
           <div className="lg:col-span-2 bg-white border border-blue-200 p-8 rounded-2xl shadow-sm">
             <h2 className="text-2xl font-semibold mb-4 text-blue-800">
@@ -79,7 +79,6 @@ export default function SaaSAnalyticsDashboard() {
           </div>
         </section>
 
-        {/* Feature Grid */}
         <section className="mb-20">
           <h2 className="text-2xl font-semibold mb-6 text-blue-800">
             Key Product Highlights
@@ -94,7 +93,7 @@ export default function SaaSAnalyticsDashboard() {
           </div>
         </section>
 
-        {/* Visual Section */}
+
         <section className="grid gap-10 lg:grid-cols-2 items-center mb-20">
           <img
             src="https://images.unsplash.com/photo-1526378722484-bd91ca387e72?q=80&w=1200&auto=format&fit=crop"
@@ -119,7 +118,7 @@ export default function SaaSAnalyticsDashboard() {
           </div>
         </section>
 
-        {/* Tech Stack */}
+
         <section className="mb-20">
           <h2 className="text-2xl font-semibold text-blue-800 mb-4">
             Technology Stack
@@ -138,7 +137,6 @@ export default function SaaSAnalyticsDashboard() {
           </div>
         </section>
 
-        {/* Testimonials */}
         <section className="mb-20">
           <h2 className="text-2xl font-semibold mb-5 text-blue-800">
             Client Feedback
@@ -167,7 +165,7 @@ export default function SaaSAnalyticsDashboard() {
           </div>
         </section>
 
-        {/* FAQ */}
+
         <section className="mb-20">
           <h2 className="text-2xl font-semibold mb-6 text-blue-800">FAQs</h2>
           <div className="space-y-4">
@@ -194,7 +192,7 @@ export default function SaaSAnalyticsDashboard() {
           </div>
         </section>
 
-        {/* CTA */}
+        
         <section className="bg-white border border-blue-200 p-10 rounded-2xl text-center shadow-sm">
           <h3 className="text-2xl font-semibold mb-3 text-blue-900">
             Ready to scale data-driven success?

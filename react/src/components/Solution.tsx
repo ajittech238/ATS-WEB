@@ -1,211 +1,3 @@
-
-
-// import React from "react";
-// import {
-//   ArrowRight,
-//   Cpu,
-//   Cloud,
-//   BarChart3,
-//   Shield,
-//   Smartphone,
-//   Code,
-//   CheckCircle,
-// } from "lucide-react";
-
-// const solutions = [
-//   {
-//     title: "AI Solutions",
-//     description:
-//       "Leverage Artificial Intelligence and Machine Learning to automate, optimize, and scale your business operations.",
-//     icon: <Cpu className="w-8 h-8" />,
-//     color: "indigo",
-//     image:
-//       "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=500&fit=crop",
-//     items: ["Predictive Analytics", "Chatbots & NLP", "AI-Powered Automation"],
-//   },
-//   {
-//     title: "Cloud Computing",
-//     description:
-//       "Scalable cloud infrastructure for seamless deployment, management, and collaboration across platforms.",
-//     icon: <Cloud className="w-8 h-8" />,
-//     color: "blue",
-//     image:
-//       "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=500&fit=crop",
-//     items: ["Cloud Migration", "DevOps & CI/CD", "Multi-Cloud Solutions"],
-//   },
-//   {
-//     title: "Data Analytics",
-//     description:
-//       "Transform data into actionable insights with advanced analytics and business intelligence tools.",
-//     icon: <BarChart3 className="w-8 h-8" />,
-//     color: "amber",
-//     image:
-//       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop",
-//     items: ["BI Dashboards", "Predictive Modeling", "Data Warehousing"],
-//   },
-//   {
-//     title: "Cybersecurity",
-//     description:
-//       "Protect your digital assets with advanced security frameworks and real-time threat detection.",
-//     icon: <Shield className="w-8 h-8" />,
-//     color: "red",
-//     image:
-//       "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=500&fit=crop",
-//     items: ["Network Security", "Data Encryption", "Risk Assessment"],
-//   },
-//   {
-//     title: "Mobile Development",
-//     description:
-//       "Build high-performance, cross-platform mobile apps that engage and convert users.",
-//     icon: <Smartphone className="w-8 h-8" />,
-//     color: "green",
-//     image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800",
-//     items: [
-//       "iOS & Android Apps",
-//       "Flutter & React Native",
-//       "App Store Optimization",
-//     ],
-//   },
-//   {
-//     title: "Web Development",
-//     description:
-//       "Develop modern, scalable, and SEO-optimized web applications with exceptional user experiences.",
-//     icon: <Code className="w-8 h-8" />,
-//     color: "purple",
-//     image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800",
-//     items: ["Responsive Design", "E-commerce Platforms", "Web App Development"],
-//   },
-// ];
-
-// const Solution: React.FC = () => {
-//   return (
-//     <div className="py-6 font-serif bg-gradient-to-r from-teal-50 via-white to-teal-100 text-gray-900">
-      
-//       {/* 🚀 Hero Section */}
-//       <section className="relative lg:py-10 overflow-hidden">
-//         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 text-center">
-//           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-//             Innovative Solutions
-//             <span className="block text-3xl md:text-5xl mt-2 font-normal text-gray-700">
-//               for Modern Challenges
-//             </span>
-//           </h1>
-
-//           <p className="text-xl text-gray-700 mb-10 max-w-4xl mx-auto leading-relaxed">
-//             Discover our comprehensive suite of technology solutions designed to
-//             accelerate your digital transformation, enhance operational
-//             efficiency, and drive sustainable business growth.
-//           </p>
-
-//           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-//             <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap h-11 rounded-md bg-teal-500 text-white hover:bg-teal-600 px-10 py-4 text-lg font-semibold shadow-lg transition-colors">
-//               Explore Solutions
-//               <ArrowRight className="ml-2 h-5 w-5" />
-//             </button>
-
-//             <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap h-11 rounded-md bg-white text-teal-600 hover:bg-teal-100 px-10 py-4 text-lg font-medium border border-teal-200 backdrop-blur-sm transition-colors">
-//               Schedule Consultation
-//             </button>
-//           </div>
-//         </div>
-//       </section>
-
-//       ---
-
-//       {/* 💡 Solutions Section */}
-//       <section
-//         id="solutions"
-//         className="py-12 bg-white/70 backdrop-blur-md rounded-t-3xl"
-//       >
-//         <div className="container mx-auto px-6 sm:px-10 lg:px-16">
-//           <div className="text-center mb-12">
-//             <h2 className="text-4xl font-bold mb-4 text-gray-900">
-//               Comprehensive Solutions
-//             </h2>
-//             <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-//               Empowering your business with cutting-edge digital solutions
-//               tailored to your unique needs.
-//             </p>
-//           </div>
-
-//           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"> 
-//             {solutions.map((solution, index) => (
-//               <div
-//                 key={index}
-//                 className="group relative bg-white shadow-md hover:shadow-xl transition-all duration-300 rounded-xl overflow-hidden"
-//               >
-//                 {/* Image */}
-//                 <div className="h-32 overflow-hidden">
-//                   <img
-//                     src={solution.image}
-//                     alt={solution.title}
-//                     className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
-//                   />
-//                 </div>
-
-//                 {/* Content */}
-//                 <div className="p-6 relative z-10">
-//                   <div className="w-14 h-14 bg-teal-100 rounded-xl flex items-center justify-center mb-4">
-//                     {solution.icon}
-//                   </div>
-
-//                   <h3 className="text-xl font-semibold mb-3 text-gray-900">
-//                     {solution.title}
-//                   </h3>
-
-//                   <p className="text-gray-700 mb-4 text-sm">{solution.description}</p>
-
-//                   <ul className="space-y-2 text-gray-600 mb-6">
-//                     {solution.items.map((item, i) => (
-//                       <li key={i} className="flex items-center gap-2 text-sm">
-//                         <CheckCircle className="w-4 h-4 text-teal-500" />
-//                         {item}
-//                       </li>
-//                     ))}
-//                   </ul>
-
-//                   <a
-//                     href="#"
-//                     className="inline-flex items-center text-teal-600 font-medium hover:underline"
-//                   >
-//                     Read More
-//                     <ArrowRight className="w-4 h-4 ml-1" />
-//                   </a>
-//                 </div>
-//               </div>
-//             ))}
-//           </div>
-//         </div>
-//       </section>
-
-//       ---
-      
-//       {/* ✅ Call to Action Section (New Section) */}
-//       <section className="py-16">
-//         <div className="container mx-auto px-6 sm:px-10 lg:px-16">
-//           <div className="bg-teal-700 text-white p-10 md:p-16 rounded-3xl shadow-2xl text-center">
-//             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-//               Ready to Start Your Digital Journey?
-//             </h2>
-//             <p className="text-xl mb-8 opacity-90 max-w-3xl mx-auto">
-//               Partner with us to build scalable, secure, and innovative solutions
-//               that redefine your business capabilities.
-//             </p>
-//             <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap h-12 rounded-lg bg-teal-300 text-teal-900 hover:bg-teal-200 px-10 py-4 text-lg font-bold shadow-xl transition-colors">
-//               Get Started Today
-//               <ArrowRight className="ml-2 h-5 w-5" />
-//             </button>
-//           </div>
-//         </div>
-//       </section>
-
-//     </div>
-//   );
-// };
-
-// export default Solution;
-
-
 import React from "react";
 import {
   ArrowRight,
@@ -217,15 +9,12 @@ import {
   Code,
   CheckCircle,
 } from "lucide-react";
-
-// The data structure is excellent and ready for use.
 const solutions = [
   {
     title: "AI Solutions",
     description:
       "Leverage Artificial Intelligence and Machine Learning to automate, optimize, and scale your business operations.",
-    // Note: Icon color is now handled dynamically in the rendering logic for better visibility on images
-    icon: <Cpu className="w-8 h-8" />, 
+    icon: <Cpu className="w-8 h-8" />,
     color: "indigo",
     image:
       "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=800&h=500&fit=crop",
@@ -267,7 +56,8 @@ const solutions = [
       "Build high-performance, cross-platform mobile apps that engage and convert users.",
     icon: <Smartphone className="w-8 h-8" />,
     color: "green",
-    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=800",
+    image:
+      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=800",
     items: [
       "iOS & Android Apps",
       "Flutter & React Native",
@@ -280,17 +70,15 @@ const solutions = [
       "Develop modern, scalable, and SEO-optimized web applications with exceptional user experiences.",
     icon: <Code className="w-8 h-8" />,
     color: "purple",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800",
+    image:
+      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800",
     items: ["Responsive Design", "E-commerce Platforms", "Web App Development"],
   },
 ];
 
 const Solution: React.FC = () => {
   return (
-    // Changed font-serif to font-sans for a modern, tech aesthetic
     <div className="min-h-screen font-sans bg-gradient-to-br from-teal-50 via-white to-cyan-100 text-gray-900">
-      
-      {/* 🚀 Hero Section (Enhanced Responsiveness and Visuals) */}
       <section className="relative pt-20 pb-16 lg:pt-32 lg:pb-24 overflow-hidden">
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 text-center">
           <h1 className="text-5xl md:text-7xl font-extrabold mb-6 leading-tight text-gray-900">
@@ -319,7 +107,6 @@ const Solution: React.FC = () => {
         </div>
       </section>
 
-      {/* 💡 Solutions Section (Card Grid) */}
       <section
         id="solutions"
         className="py-16 sm:py-20 bg-white/90 backdrop-blur-sm rounded-t-3xl border-t border-teal-200"
@@ -335,46 +122,47 @@ const Solution: React.FC = () => {
             </p>
           </div>
 
-          {/* Responsive Card Grid: 1 column on mobile, 2 on tablet, 3 on desktop */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"> 
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {solutions.map((solution, index) => (
               <div
                 key={index}
                 className="group relative bg-white border border-teal-100 shadow-xl hover:shadow-2xl transition-all duration-500 rounded-2xl overflow-hidden transform hover:-translate-y-1"
               >
-                
-                {/* 1. Image Section */}
                 <div className="h-40 overflow-hidden">
                   <img
                     src={solution.image}
                     alt={solution.title}
                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
                     onError={(e) => {
-                      e.currentTarget.onerror = null; 
-                      e.currentTarget.src = `https://placehold.co/800x500/E0F2F7/0F766E?text=${solution.title.replace(/\s/g, '+')}`;
+                      e.currentTarget.onerror = null;
+                      e.currentTarget.src = `https://placehold.co/800x500/E0F2F7/0F766E?text=${solution.title.replace(
+                        /\s/g,
+                        "+"
+                      )}`;
                     }}
                   />
                 </div>
 
-                {/* 2. ICON PLACED ABSOLUTELY ON TOP OF THE IMAGE */}
-                <div 
+                <div
                   className={`absolute top-4 left-4 w-14 h-14 bg-${solution.color}-600 text-white rounded-xl flex items-center justify-center z-20 shadow-xl border-2 border-white`}
                 >
-                  {/* Cloning the icon element to enforce white color for contrast */}
-                  {React.cloneElement(solution.icon, { className: 'w-8 h-8 text-white' })}
+                  {React.cloneElement(solution.icon, {
+                    className: "w-8 h-8 text-white",
+                  })}
                 </div>
 
-
-                {/* 3. Content */}
                 <div className="p-6 sm:p-8 relative z-10">
-                  {/* Title */}
                   <h3 className="text-2xl font-bold mb-3 text-gray-900">
                     {solution.title}
                   </h3>
 
-                  <p className="text-gray-700 mb-6 text-base">{solution.description}</p>
+                  <p className="text-gray-700 mb-6 text-base">
+                    {solution.description}
+                  </p>
 
-                  <h4 className="font-semibold text-gray-800 mb-3">Key Capabilities:</h4>
+                  <h4 className="font-semibold text-gray-800 mb-3">
+                    Key Capabilities:
+                  </h4>
                   <ul className="space-y-2 text-gray-600 mb-8">
                     {solution.items.map((item, i) => (
                       <li key={i} className="flex items-center gap-3 text-base">
@@ -384,7 +172,6 @@ const Solution: React.FC = () => {
                     ))}
                   </ul>
 
-                  {/* Call to Action Link */}
                   <a
                     href="#"
                     className="inline-flex items-center text-lg font-bold text-teal-600 group-hover:text-teal-700 transition duration-300"
@@ -399,7 +186,6 @@ const Solution: React.FC = () => {
         </div>
       </section>
 
-      {/* ✅ Call to Action Section */}
       <section className="py-16 sm:py-20 bg-teal-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-white p-8 md:p-12 rounded-2xl shadow-inner bg-teal-700/50 text-center">
@@ -407,8 +193,8 @@ const Solution: React.FC = () => {
               Ready to Start Your Digital Journey?
             </h2>
             <p className="text-lg md:text-xl mb-8 opacity-90 max-w-4xl mx-auto">
-              Partner with us to build scalable, secure, and innovative solutions
-              that redefine your business capabilities.
+              Partner with us to build scalable, secure, and innovative
+              solutions that redefine your business capabilities.
             </p>
             <button className="inline-flex items-center justify-center gap-2 w-full sm:w-auto rounded-xl bg-white text-teal-800 hover:bg-teal-50 px-10 py-3 text-lg font-bold shadow-2xl transition-colors transform hover:scale-[1.05]">
               Get Started Today
@@ -417,7 +203,6 @@ const Solution: React.FC = () => {
           </div>
         </div>
       </section>
-
     </div>
   );
 };

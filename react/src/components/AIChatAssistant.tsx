@@ -22,7 +22,7 @@ export default function AIChatAssistant() {
     <main className="bg-gradient-to-b from-blue-50 via-white to-blue-100 text-gray-900 min-h-screen py-32 px-4">
       <div className="max-w-7xl mx-auto">
 
-        {/* HERO */}
+
         <section className="grid gap-10 lg:grid-cols-2 items-center mb-20">
           <div>
             <span className="text-sm bg-blue-100 text-blue-700 rounded-full px-4 py-1 inline-block mb-4 font-medium">
@@ -51,7 +51,7 @@ export default function AIChatAssistant() {
           />
         </section>
 
-        {/* IMPACT STATS */}
+
         <section className="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center mb-16">
           {[
             { label: "Resolution Time", value: "-62%" },
@@ -66,7 +66,7 @@ export default function AIChatAssistant() {
           ))}
         </section>
 
-        {/* OVERVIEW */}
+
         <section className="grid gap-10 lg:grid-cols-3 mb-20">
           <div className="lg:col-span-2 bg-white border border-blue-200 p-8 rounded-2xl shadow-sm">
             <h2 className="text-2xl font-semibold mb-4 text-blue-800">Project Overview</h2>
@@ -86,7 +86,7 @@ export default function AIChatAssistant() {
           </div>
         </section>
 
-        {/* FEATURES */}
+
         <section className="mb-20">
           <h2 className="text-2xl font-semibold mb-8 text-blue-800">Core Features</h2>
 
@@ -124,7 +124,7 @@ export default function AIChatAssistant() {
           </div>
         </section>
 
-        {/* RESULTS */}
+
         <section className="grid gap-10 lg:grid-cols-2 items-center mb-20">
           <img
             src="https://plus.unsplash.com/premium_photo-1677094310893-0d6594c211ea?auto=format&fit=crop&q=60&w=1000"
@@ -147,7 +147,7 @@ export default function AIChatAssistant() {
           </div>
         </section>
 
-        {/* TECH STACK */}
+
         <section className="mb-20">
           <h2 className="text-2xl font-semibold mb-5 text-blue-800">Technology Stack</h2>
 
@@ -174,7 +174,7 @@ export default function AIChatAssistant() {
           </div>
         </section>
 
-        {/* TESTIMONIALS */}
+
         <section className="mb-20">
           <h2 className="text-2xl font-semibold mb-6 text-blue-800">Client Feedback</h2>
           <div className="grid md:grid-cols-2 gap-6">
@@ -195,7 +195,7 @@ export default function AIChatAssistant() {
           </div>
         </section>
 
-        {/* FAQ */}
+
         <section className="mb-20">
           <h2 className="text-2xl font-semibold mb-6 text-blue-800">FAQs</h2>
           <div className="space-y-3">
@@ -219,7 +219,7 @@ export default function AIChatAssistant() {
           </div>
         </section>
 
-        {/* CTA */}
+      
         <section className="bg-white border border-blue-200 p-10 rounded-2xl text-center shadow-sm">
           <h3 className="text-2xl font-semibold mb-3 text-blue-900">
             Enhance your support with intelligent automation

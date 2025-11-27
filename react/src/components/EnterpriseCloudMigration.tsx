@@ -1,199 +1,13 @@
-
-
-// import React from "react";
-
-// // THEME CHANGE: CloudFeature uses Teal colors now
-// const CloudFeature = ({
-//   title,
-//   desc,
-//   img,
-// }: {
-//   title: string;
-//   desc: string;
-//   img: string;
-// }) => (
-//   // THEME CHANGE: Border and hover shadow
-//   <div className="bg-white border border-teal-100 rounded-xl overflow-hidden shadow-sm hover:shadow-md hover:shadow-teal-300/40 transition">
-//     <img src={img} alt={title} className="w-full h-44 object-cover" />
-//     <div className="p-6">
-//       {/* THEME CHANGE: Title color */}
-//       <h4 className="font-semibold text-lg text-teal-700 mb-2">{title}</h4>
-//       <p className="text-gray-700 text-sm leading-relaxed">{desc}</p>
-//     </div>
-//   </div>
-// );
-
-// export default function EnterpriseCloudMigration() {
-//   return (
-//     // THEME CHANGE: Background gradient and font family changed to Teal/Cyan and serif
-//     <main className="bg-gradient-to-b from-teal-50 via-white to-cyan-100 text-gray-900 min-h-screen py-32 px-4 font-serif">
-//       <div className="max-w-7xl mx-auto">
-
-//         {/* HERO SECTION */}
-//         <section className="grid gap-10 lg:grid-cols-2 items-center mb-20">
-//           <div>
-//             {/* THEME CHANGE: Tag background and text color */}
-//             <span className="text-sm bg-teal-100 text-teal-700 px-4 py-1 rounded-full">
-//               Cloud Solutions · Enterprise
-//             </span>
-
-//             {/* THEME CHANGE: Heading color */}
-//             <h1 className="text-4xl md:text-5xl font-bold leading-tight mt-3 mb-6 text-teal-800">
-//               Enterprise Cloud Migration
-//             </h1>
-
-//             <p className="text-lg text-gray-700 leading-relaxed mb-8 max-w-xl">
-//               High-scale cloud transformation ensuring performance, security,
-//               and cost efficiency. From legacy infra to modern cloud-native
-//               architecture — seamlessly executed with zero downtime strategy.
-//             </p>
-//           </div>
-
-//           <img
-//             src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=1400"
-//             alt="Cloud Migration"
-//             className="rounded-2xl shadow-lg w-full h-80 object-cover"
-//           />
-//         </section>
-
-//         {/* STATISTICS */}
-//         <section className="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center mb-20">
-//           {[
-//             { label: "Infra Cost Savings", value: "60%" },
-//             { label: "Downtime Reduced", value: "95%" },
-//             { label: "Faster Deployment", value: "4x" },
-//             { label: "Microservices Shift", value: "100%" },
-//           ].map((stat) => (
-//             <div key={stat.label}>
-//               {/* THEME CHANGE: Stat value color */}
-//               <p className="text-3xl font-bold text-teal-600">{stat.value}</p>
-//               <p className="text-xs text-gray-600">{stat.label}</p>
-//             </div>
-//           ))}
-//         </section>
-
-//         {/* CLOUD BENEFITS / FEATURE CARDS */}
-//         <section className="mb-20">
-//           {/* THEME CHANGE: Heading color */}
-//           <h2 className="text-2xl font-semibold mb-6 text-teal-700">Why Cloud Migration?</h2>
-//           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-
-//             <CloudFeature
-//               title="Scalability & Flexibility"
-//               desc="Auto-scaling ensures performance under heavy loads while optimizing costs."
-//               img="https://images.pexels.com/photos/2387532/pexels-photo-2387532.jpeg?auto=compress&cs=tinysrgb&w=1200"
-//             />
-
-//             <CloudFeature
-//               title="Improved Performance"
-//               desc="Reduced latency with globally distributed compute and storage solutions."
-//               img="https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg?auto=compress&cs=tinysrgb&w=1200"
-//             />
-
-//             <CloudFeature
-//               title="Strong Security Layer"
-//               desc="IAM, Zero Trust architecture & compliance-driven access policies."
-//               img="https://images.pexels.com/photos/5965892/pexels-photo-5965892.jpeg?auto=compress&cs=tinysrgb&w=1200"
-//             />
-
-//           </div>
-//         </section>
-
-//         {/* MIGRATION PHASES */}
-//         <section className="mb-20">
-//           {/* THEME CHANGE: Heading color */}
-//           <h2 className="text-2xl font-semibold mb-6 text-teal-700">Migration Process</h2>
-//           <div className="grid gap-8 md:grid-cols-4">
-
-//             {[
-//               {
-//                 title: "1️⃣ Assessment",
-//                 detail:
-//                   "Application audit & TCO estimation to form transformation roadmap.",
-//               },
-//               {
-//                 title: "2️⃣ Planning",
-//                 detail:
-//                   "Architecting cloud-native solution using best practices & compliance.",
-//               },
-//               {
-//                 title: "3️⃣ Migration",
-//                 detail:
-//                   "Lift & shift → Replatforming → Microservices decomposition.",
-//               },
-//               {
-//                 title: "4️⃣ Optimization",
-//                 detail:
-//                   "FinOps monitoring, auto-scaling & performance refinement.",
-//               },
-//             ].map((step) => (
-//               <div
-//                 key={step.title}
-//                 // THEME CHANGE: Step border, background, and title color
-//                 className="p-6 border border-teal-100 bg-white rounded-xl"
-//               >
-//                 <h4 className="font-semibold text-teal-700 mb-2">
-//                   {step.title}
-//                 </h4>
-//                 <p className="text-sm text-gray-700">{step.detail}</p>
-//               </div>
-//             ))}
-
-//           </div>
-//         </section>
-
-//         {/* TECHNOLOGY STACK */}
-//         <section className="mb-20">
-//           {/* THEME CHANGE: Heading color */}
-//           <h2 className="text-2xl font-semibold mb-4 text-teal-700">Technologies Used</h2>
-//           <div className="flex gap-3 flex-wrap">
-//             {[
-//               "AWS",
-//               "Docker",
-//               "Kubernetes",
-//               "Terraform",
-//               "MongoDB",
-//               "Kafka",
-//               "CI/CD Pipelines",
-//               "Serverless",
-//             ].map((item) => (
-//               <span
-//                 key={item}
-//                 // THEME CHANGE: Tech tag background, border, and text color
-//                 className="px-3 py-1 bg-teal-50 border border-teal-100 rounded-full text-sm text-teal-700"
-//               >
-//                 {item}
-//               </span>
-//             ))}
-//           </div>
-//         </section>
-
-//         {/* CALL TO ACTION */}
-//         <section 
-//           // THEME CHANGE: CTA border and shadow
-//           className="p-10 text-center bg-white border border-teal-100 rounded-2xl shadow-sm"
-//         >
-//           {/* THEME CHANGE: Heading color */}
-//           <h3 className="text-2xl font-semibold mb-3 text-teal-800">Ready for Cloud?</h3>
-//           <p className="text-gray-700 mb-6 max-w-xl mx-auto">
-//             Transform your infrastructure with future-proof cloud modernization.
-//           </p>
-//           {/* THEME CHANGE: Button gradient color and hover shadow */}
-//           <button className="bg-gradient-to-r from-teal-500 to-cyan-600 hover:from-teal-600 hover:to-cyan-700 text-white px-8 py-3 rounded-full font-semibold shadow-md hover:shadow-teal-400/40 transition">
-//             Book Consultation
-//           </button>
-//         </section>
-//       </div>
-//     </main>
-//   );
-// }
-
-
 import React from "react";
-// Importing relevant icons for cloud/enterprise theme
-import { Cloud, TrendingUp, Lock, HardHat, FileText, Settings, Zap } from 'lucide-react';
-
-// CloudFeature component uses Teal colors now
+import {
+  Cloud,
+  TrendingUp,
+  Lock,
+  HardHat,
+  FileText,
+  Settings,
+  Zap,
+} from "lucide-react";
 const CloudFeature = ({
   title,
   desc,
@@ -205,35 +19,29 @@ const CloudFeature = ({
   img: string;
   Icon: React.ElementType;
 }) => (
-  // Enhanced shadow, transition, and hover effect for better visual appeal
   <div className="bg-white border border-teal-200 rounded-xl overflow-hidden shadow-lg hover:shadow-xl hover:shadow-teal-300/40 transition duration-300 transform hover:-translate-y-1">
     <div className="relative w-full h-44">
-      <img 
-        src={img} 
-        alt={title} 
-        className="w-full h-full object-cover" 
-        // Placeholder for bad image URLs
+      <img
+        src={img}
+        alt={title}
+        className="w-full h-full object-cover"
         onError={(e) => {
-          e.currentTarget.onerror = null; 
-          e.currentTarget.src = "https://placehold.co/600x400/80CBC4/1E88E5?text=Cloud+Feature";
+          e.currentTarget.onerror = null;
+          e.currentTarget.src =
+            "https://placehold.co/600x400/80CBC4/1E88E5?text=Cloud+Feature";
         }}
       />
-      {/* Icon overlay for visual emphasis */}
       <div className="absolute top-0 right-0 m-3 p-2 bg-white/90 backdrop-blur-sm rounded-full shadow-lg text-teal-600">
         <Icon className="w-6 h-6" />
       </div>
     </div>
     <div className="p-6">
-      {/* Title color and size increased */}
       <h4 className="font-bold text-xl text-teal-800 mb-2">{title}</h4>
       <p className="text-gray-700 text-base leading-relaxed">{desc}</p>
     </div>
   </div>
 );
-
-// Renaming to App for standard single-file structure
 export default function App() {
-  
   const migrationPhases = [
     {
       title: "1️⃣ Assessment",
@@ -262,50 +70,42 @@ export default function App() {
   ];
 
   return (
-    // THEME: Background gradient and font family changed to Teal/Cyan and serif
     <main className="bg-gradient-to-b from-teal-50 via-white to-cyan-100 text-gray-900 min-h-screen py-16 md:py-32 px-4 font-serif antialiased">
       <div className="max-w-7xl mx-auto">
-
-        {/* HERO SECTION - Enhanced responsiveness */}
         <section className="grid gap-12 lg:grid-cols-2 items-center mb-24">
           <div className="lg:pr-8">
-            {/* Tag */}
             <span className="text-sm bg-teal-100 text-teal-700 px-4 py-1 rounded-full font-medium shadow-sm inline-block mb-4">
               Cloud Solutions · Enterprise · DevOps
             </span>
 
-            {/* Heading is responsive: 4xl on mobile, 6xl on desktop */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mt-3 mb-6 text-teal-900">
               Accelerate Enterprise Cloud Transformation
             </h1>
 
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-10 max-w-xl">
-              High-scale cloud transformation ensuring peak performance, zero-trust security,
-              and maximum cost efficiency. We move your legacy infrastructure to modern
-              cloud-native architecture — seamlessly executed with a zero-downtime strategy.
+              High-scale cloud transformation ensuring peak performance,
+              zero-trust security, and maximum cost efficiency. We move your
+              legacy infrastructure to modern cloud-native architecture —
+              seamlessly executed with a zero-downtime strategy.
             </p>
-            
-            {/* Primary button style matched to SecureBankingApp for consistency */}
-            <button 
-              className="bg-gradient-to-r from-teal-500 to-cyan-600 hover:from-teal-600 hover:to-cyan-700 text-white px-8 py-4 rounded-full font-bold shadow-lg hover:shadow-xl hover:shadow-teal-400/40 transition duration-300 transform hover:scale-105"
-            >
+
+            <button className="bg-gradient-to-r from-teal-500 to-cyan-600 hover:from-teal-600 hover:to-cyan-700 text-white px-8 py-4 rounded-full font-bold shadow-lg hover:shadow-xl hover:shadow-teal-400/40 transition duration-300 transform hover:scale-105">
               Start Your Journey
             </button>
           </div>
 
-          {/* Hero Image - Responsive height control */}
           <img
             src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=1400"
             alt="Cloud Migration Strategy"
             className="rounded-3xl shadow-2xl w-full h-64 sm:h-80 md:h-96 object-cover transition duration-500"
             onError={(e) => {
-              e.currentTarget.onerror = null; 
-              e.currentTarget.src = "https://placehold.co/1400x900/50C2C7/ffffff?text=Enterprise+Cloud";
+              e.currentTarget.onerror = null;
+              e.currentTarget.src =
+                "https://placehold.co/1400x900/50C2C7/ffffff?text=Enterprise+Cloud";
             }}
           />
         </section>
 
-        {/* STATISTICS - Enhanced visuals and consistency */}
         <section className="grid grid-cols-2 sm:grid-cols-4 gap-8 text-center mb-24 p-6 bg-white rounded-2xl shadow-inner">
           {[
             { label: "Infra Cost Savings", value: "60%" },
@@ -313,20 +113,25 @@ export default function App() {
             { label: "Faster Deployment", value: "4x" },
             { label: "Microservices Shift", value: "100%" },
           ].map((stat) => (
-            <div key={stat.label} className="border-r last:border-r-0 border-teal-100 px-2">
-              <p className="text-4xl font-extrabold text-teal-600 mb-1">{stat.value}</p>
-              <p className="text-sm text-gray-600 uppercase tracking-wider">{stat.label}</p>
+            <div
+              key={stat.label}
+              className="border-r last:border-r-0 border-teal-100 px-2"
+            >
+              <p className="text-4xl font-extrabold text-teal-600 mb-1">
+                {stat.value}
+              </p>
+              <p className="text-sm text-gray-600 uppercase tracking-wider">
+                {stat.label}
+              </p>
             </div>
           ))}
         </section>
 
-        {/* CLOUD BENEFITS / FEATURE CARDS - Responsive grid and integrated icons */}
         <section className="mb-24">
           <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-12 text-teal-800">
             Why Migrate to the Cloud?
           </h2>
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-
             <CloudFeature
               title="Scalability & Flexibility"
               desc="Leverage auto-scaling to guarantee consistent performance under fluctuating loads while precisely optimizing resource costs."
@@ -347,21 +152,17 @@ export default function App() {
               img="https://images.pexels.com/photos/5965892/pexels-photo-5965892.jpeg?auto=compress&cs=tinysrgb&w=1200"
               Icon={Lock}
             />
-
           </div>
         </section>
 
-        {/* MIGRATION PHASES - Responsive 2x2 grid on small screens, 4 columns on desktop */}
         <section className="mb-24">
           <h2 className="text-3xl font-bold text-center mb-8 text-teal-800">
             Our Proven Migration Process
           </h2>
           <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-4 max-w-6xl mx-auto">
-            
             {migrationPhases.map((step) => (
               <div
                 key={step.title}
-                // Step styling enhanced
                 className="p-6 border-2 border-teal-200 bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300"
               >
                 <step.Icon className="w-8 h-8 text-teal-600 mb-3" />
@@ -371,12 +172,9 @@ export default function App() {
                 <p className="text-sm text-gray-700">{step.detail}</p>
               </div>
             ))}
-             {/* Image illustrating the phases of cloud migration */}
-            
           </div>
         </section>
 
-        {/* TECHNOLOGY STACK - Responsive centering */}
         <section className="mb-24">
           <h2 className="text-3xl font-bold text-center mb-6 text-teal-800">
             Core Technology Expertise
@@ -394,7 +192,6 @@ export default function App() {
             ].map((item) => (
               <span
                 key={item}
-                // Tech tag styling matched for consistency
                 className="px-4 py-2 bg-teal-50 border border-teal-300 rounded-full text-sm font-semibold text-teal-700 shadow-sm whitespace-nowrap"
               >
                 {item}
@@ -403,21 +200,15 @@ export default function App() {
           </div>
         </section>
 
-        {/* CALL TO ACTION - Enhanced visuals and responsiveness */}
-        <section 
-          className="p-8 sm:p-12 bg-white border-2 border-teal-300 rounded-3xl text-center shadow-2xl shadow-teal-200/50"
-        >
-          {/* Heading color */}
+        <section className="p-8 sm:p-12 bg-white border-2 border-teal-300 rounded-3xl text-center shadow-2xl shadow-teal-200/50">
           <h3 className="text-3xl md:text-4xl font-extrabold mb-4 text-teal-900">
             Ready for a Digital-First Infrastructure?
           </h3>
           <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
-            Transform your infrastructure with future-proof cloud modernization and unlock significant operational efficiencies.
+            Transform your infrastructure with future-proof cloud modernization
+            and unlock significant operational efficiencies.
           </p>
-          {/* Button style matched for consistency */}
-          <button 
-            className="bg-gradient-to-r from-teal-500 to-cyan-600 hover:from-teal-600 hover:to-cyan-700 text-white px-10 py-4 rounded-full font-bold shadow-xl hover:shadow-2xl hover:shadow-teal-400/50 transition duration-300 transform hover:scale-105"
-          >
+          <button className="bg-gradient-to-r from-teal-500 to-cyan-600 hover:from-teal-600 hover:to-cyan-700 text-white px-10 py-4 rounded-full font-bold shadow-xl hover:shadow-2xl hover:shadow-teal-400/50 transition duration-300 transform hover:scale-105">
             Book a Free Consultation
           </button>
         </section>

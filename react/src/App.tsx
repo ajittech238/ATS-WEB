@@ -38,10 +38,11 @@ import Careers from "./components/Careers";
 import Contact from "./components/Contact";
 import LetsCreate from "./components/LetsCreate";
 
-import TeamMembers from "./components/TeamMembers";
-import AadarshProfile from "./components/AadarshProfile";
-import Profile from "./components/Profile";
-import RajSinghShekhawatProfile from "./components/RajSinghShekhawatProfile";
+
+import PramodProfile from "./portfolio/PramodProfile";
+import RahulProfile from "./portfolio/RahulProfile";
+import AakashProfile from "./portfolio/AakashProfile";
+import KamleshProfile from "./portfolio/KamleshProfile";
 
 import AiPage from "./components/AiPage";
 import SecureBankingApp from "./components/SecureBankingApp";
@@ -54,6 +55,7 @@ import AIChatAssistant from "./components/AIChatAssistant";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import TermsOfService from "./components/TermsOfService";
 
+
 const App: React.FC = () => {
   const [openModal, setOpenModal] = useState(false);
 
@@ -64,7 +66,7 @@ const App: React.FC = () => {
 
   return (
     <Router>
-      <ScrollToTop />             {/* ⭐ PAGE ALWAYS FROM TOP */}
+      <ScrollToTop />
       <ModalOnlyForHome setOpenModal={setOpenModal} />
 
       <div className="relative w-full overflow-x-hidden min-h-screen flex flex-col bg-white text-gray-900">
@@ -107,10 +109,10 @@ const App: React.FC = () => {
 
             <Route path="/lets-create" element={<LetsCreate />} />
 
-            <Route path="/team-members" element={<TeamMembers />} />
-            <Route path="/team-members2" element={<AadarshProfile />} />
-            <Route path="/team-members3" element={<Profile />} />
-            <Route path="/team-members4" element={<RajSinghShekhawatProfile />} />
+            <Route path="/team-members" element={<PramodProfile />} />
+            <Route path="/team-members2" element={<RahulProfile />} />
+            <Route path="/team-members3" element={<AakashProfile />} />
+            <Route path="/team-members4" element={<KamleshProfile />} />
 
             <Route path="/ai-page" element={<AiPage />} />
             <Route path="/secure-page" element={<SecureBankingApp />} />
